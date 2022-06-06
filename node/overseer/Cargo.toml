@@ -19,7 +19,7 @@ polkadot-primitives = { path = "../../primitives" }
 polkadot-overseer-gen = { path = "./overseer-gen" }
 polkadot-overseer-all-subsystems-gen = { path = "./all-subsystems-gen" }
 tracing = "0.1.26"
-lru = "0.6"
+lru = "0.7"
 
 [dev-dependencies]
 metered-channel = { path = "../metered-channel" }
