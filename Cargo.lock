@@ -3779,7 +3779,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log",
- "lru",
+ "lru 0.6.6",
  "minicbor",
  "rand 0.7.3",
  "smallvec",
@@ -4051,6 +4051,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "lru"
+version = "0.7.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8015d95cb7b2ddd3c0d32ca38283ceb1eea09b4713ee380bceb942d85a244228"
+dependencies = [
+ "hashbrown",
+]
+
+[[package]]
 name = "lru-cache"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4180,7 +4189,7 @@ version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "beeb98b3d1ed2c0054bd81b5ba949a0243c3ccad751d45ea898fa8059fa2860a"
 dependencies = [
- "lru",
+ "lru 0.6.6",
 ]
 
 [[package]]
@@ -5507,7 +5516,7 @@ dependencies = [
  "hashbrown",
  "impl-trait-for-tuples",
  "jemallocator",
- "lru",
+ "lru 0.6.6",
  "parity-util-mem-derive",
  "parking_lot 0.11.1",
  "primitive-types",
@@ -5861,7 +5870,7 @@ dependencies = [
  "derive_more",
  "futures 0.3.16",
  "futures-timer 3.0.2",
- "lru",
+ "lru 0.7.6",
  "maplit",
  "parity-scale-codec",
  "polkadot-erasure-coding",
@@ -5892,7 +5901,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "log",
- "lru",
+ "lru 0.7.6",
  "parity-scale-codec",
  "polkadot-erasure-coding",
  "polkadot-node-network-protocol",
@@ -6012,7 +6021,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "lazy_static",
- "lru",
+ "lru 0.7.6",
  "maplit",
  "parity-scale-codec",
  "polkadot-erasure-coding",
@@ -6122,7 +6131,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "kvdb",
  "kvdb-memorydb",
- "lru",
+ "lru 0.7.6",
  "maplit",
  "merlin",
  "parity-scale-codec",
@@ -6555,7 +6564,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "itertools 0.10.0",
  "log",
- "lru",
+ "lru 0.7.6",
  "metered-channel",
  "parity-scale-codec",
  "parking_lot 0.11.1",
@@ -6588,7 +6597,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "kv-log-macro",
- "lru",
+ "lru 0.7.6",
  "metered-channel",
  "parking_lot 0.11.1",
  "polkadot-node-metrics",
@@ -8805,7 +8814,7 @@ dependencies = [
  "linked-hash-map",
  "linked_hash_set",
  "log",
- "lru",
+ "lru 0.6.6",
  "nohash-hasher",
  "parity-scale-codec",
  "parking_lot 0.11.1",
@@ -8844,7 +8853,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "libp2p",
  "log",
- "lru",
+ "lru 0.6.6",
  "sc-network",
  "sp-runtime",
  "substrate-prometheus-endpoint",
@@ -9743,7 +9752,7 @@ source = "git+https://github.com/paritytech/substrate?branch=master#7342a2fb587c
 dependencies = [
  "futures 0.3.16",
  "log",
- "lru",
+ "lru 0.6.6",
  "parity-scale-codec",
  "parking_lot 0.11.1",
  "sp-api",
@@ -11243,7 +11252,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04f8ab788026715fa63b31960869617cba39117e520eb415b0139543e325ab59"
 dependencies = [
  "cfg-if 0.1.10",
- "rand 0.3.23",
+ "rand 0.7.3",
  "static_assertions",
 ]
 
