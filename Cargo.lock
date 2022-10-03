@@ -2608,6 +2608,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "hashbrown"
+version = "0.12.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
+dependencies = [
+ "ahash",
+]
+
+[[package]]
 name = "heck"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2930,7 +2939,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc633605454125dec4b66843673f01c7df2b89479b32e0ed634e43a91cff62a5"
 dependencies = [
  "autocfg",
- "hashbrown",
+ "hashbrown 0.11.2",
  "serde",
 ]
 
@@ -3779,7 +3788,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log",
- "lru",
+ "lru 0.6.6",
  "minicbor",
  "rand 0.7.3",
  "smallvec",
@@ -4047,7 +4056,16 @@ version = "0.6.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ea2d928b485416e8908cff2d97d621db22b27f7b3b6729e438bcf42c671ba91"
 dependencies = [
- "hashbrown",
+ "hashbrown 0.11.2",
+]
+
+[[package]]
+name = "lru"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6e8aaa3f231bb4bd57b84b2d5dc3ae7f350265df8aa96492e0bc394a1571909"
+dependencies = [
+ "hashbrown 0.12.3",
 ]
 
 [[package]]
@@ -4170,7 +4188,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "de006e09d04fc301a5f7e817b75aa49801c4479a8af753764416b085337ddcc5"
 dependencies = [
  "hash-db",
- "hashbrown",
+ "hashbrown 0.11.2",
  "parity-util-mem",
 ]
 
@@ -4180,7 +4198,7 @@ version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "beeb98b3d1ed2c0054bd81b5ba949a0243c3ccad751d45ea898fa8059fa2860a"
 dependencies = [
- "lru",
+ "lru 0.6.6",
 ]
 
 [[package]]
@@ -5504,10 +5522,10 @@ checksum = "7ad6f1acec69b95caf435bbd158d486e5a0a44fcf51531e84922c59ff09e8457"
 dependencies = [
  "cfg-if 1.0.0",
  "ethereum-types",
- "hashbrown",
+ "hashbrown 0.11.2",
  "impl-trait-for-tuples",
  "jemallocator",
- "lru",
+ "lru 0.6.6",
  "parity-util-mem-derive",
  "parking_lot 0.11.1",
  "primitive-types",
@@ -5861,7 +5879,7 @@ dependencies = [
  "derive_more",
  "futures 0.3.16",
  "futures-timer 3.0.2",
- "lru",
+ "lru 0.8.1",
  "maplit",
  "parity-scale-codec",
  "polkadot-erasure-coding",
@@ -5892,7 +5910,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "log",
- "lru",
+ "lru 0.8.1",
  "parity-scale-codec",
  "polkadot-erasure-coding",
  "polkadot-node-network-protocol",
@@ -6012,7 +6030,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "lazy_static",
- "lru",
+ "lru 0.8.1",
  "maplit",
  "parity-scale-codec",
  "polkadot-erasure-coding",
@@ -6122,7 +6140,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "kvdb",
  "kvdb-memorydb",
- "lru",
+ "lru 0.8.1",
  "maplit",
  "merlin",
  "parity-scale-codec",
@@ -6555,7 +6573,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "itertools 0.10.0",
  "log",
- "lru",
+ "lru 0.8.1",
  "metered-channel",
  "parity-scale-codec",
  "parking_lot 0.11.1",
@@ -6588,7 +6606,7 @@ dependencies = [
  "futures 0.3.16",
  "futures-timer 3.0.2",
  "kv-log-macro",
- "lru",
+ "lru 0.8.1",
  "metered-channel",
  "parking_lot 0.11.1",
  "polkadot-node-metrics",
@@ -8805,7 +8823,7 @@ dependencies = [
  "linked-hash-map",
  "linked_hash_set",
  "log",
- "lru",
+ "lru 0.6.6",
  "nohash-hasher",
  "parity-scale-codec",
  "parking_lot 0.11.1",
@@ -8844,7 +8862,7 @@ dependencies = [
  "futures-timer 3.0.2",
  "libp2p",
  "log",
- "lru",
+ "lru 0.6.6",
  "sc-network",
  "sp-runtime",
  "substrate-prometheus-endpoint",
@@ -9743,7 +9761,7 @@ source = "git+https://github.com/paritytech/substrate?branch=master#7342a2fb587c
 dependencies = [
  "futures 0.3.16",
  "log",
- "lru",
+ "lru 0.6.6",
  "parity-scale-codec",
  "parking_lot 0.11.1",
  "sp-api",
@@ -11133,7 +11151,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9eac131e334e81b6b3be07399482042838adcd7957aa0010231d0813e39e02fa"
 dependencies = [
  "hash-db",
- "hashbrown",
+ "hashbrown 0.11.2",
  "log",
  "rustc-hex",
  "smallvec",
@@ -11243,7 +11261,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04f8ab788026715fa63b31960869617cba39117e520eb415b0139543e325ab59"
 dependencies = [
  "cfg-if 0.1.10",
- "rand 0.3.23",
+ "rand 0.7.3",
  "static_assertions",
 ]
 
